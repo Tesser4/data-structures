@@ -33,6 +33,12 @@ const linkedList = (() => {
       }
       size += 1
     },
+    removeFirst() {
+      if (head) {
+        head = head.next
+        size -= 1
+      }
+    },
     size() {
       return size
     },
