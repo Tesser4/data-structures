@@ -77,6 +77,16 @@ const linkedList = (() => {
     clear() {
       head = null
       size = 0
+    },
+    toString() {
+      let output = '['
+      let cur = head
+      while (cur) {
+        output += cur.val
+        if (cur.next) output += ', '
+        cur = cur.next
+      }
+      return output + ']'
     }
   }
 })()
