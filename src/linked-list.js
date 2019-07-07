@@ -18,6 +18,21 @@ const linkedList = (() => {
       }
       size += 1
     },
+    insert(index, val) {
+      if (index < 0 || index > size) return
+      if (index === 0) {
+        head = node(val, head)
+      } else {
+        let cur = head
+        let prev
+        for (let i = 0; i < index; i++) {
+          prev = cur
+          cur = cur.next
+        }
+        prev.next = node(val, cur)
+      }
+      size += 1
+    },
     size() {
       return size
     },
