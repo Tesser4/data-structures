@@ -66,6 +66,11 @@ const linkedList = (() => {
       }
       size -= 1
     },
+    get(index) {
+      let cur = head
+      for (let i = 0; i < index; i++) cur = cur.next
+      return cur.val
+    },
     size() {
       return size
     },
