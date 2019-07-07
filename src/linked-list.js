@@ -39,6 +39,18 @@ const linkedList = (() => {
         size -= 1
       }
     },
+    removeLast() {
+      if (head) {
+        if (head.next) {
+          let cur = head
+          while (cur.next.next) cur = cur.next
+          cur.next = null
+        } else {
+          head = null
+        }
+        size -= 1
+      }
+    },
     size() {
       return size
     },
