@@ -51,6 +51,21 @@ const linkedList = (() => {
         size -= 1
       }
     },
+    remove(index) {
+      if (index < 0 || index >= size) return
+      if (index === 0) {
+        head = head.next
+      } else {
+        let cur = head
+        let prev
+        for (let i = 0; i < index; i++) {
+          prev = cur
+          cur = cur.next
+        }
+        prev.next = cur.next
+      }
+      size -= 1
+    },
     size() {
       return size
     },
