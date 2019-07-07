@@ -1,4 +1,4 @@
-const linkedList = (() => {
+const getLinkedList = () => {
   let head = null
   let size = 0
   const node = (val, next = null) => ({ val, next })
@@ -89,6 +89,6 @@ const linkedList = (() => {
       return output + ']'
     }
   }
-})()
+}
 
-module.exports = linkedList
+module.exports = getLinkedList
