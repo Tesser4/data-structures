@@ -78,6 +78,15 @@ const getLinkedList = () => {
       head = null
       size = 0
     },
+    toArray() {
+      let array = []
+      let cur = head
+      while (cur) {
+        array.push(cur.val)
+        cur = cur.next
+      }
+      return array
+    },
     toString() {
       let output = '['
       let cur = head
