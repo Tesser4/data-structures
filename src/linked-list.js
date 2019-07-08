@@ -91,8 +91,7 @@ const getLinkedList = () => {
       let output = '['
       let cur = head
       while (cur) {
-        output += cur.val
-        if (cur.next) output += ', '
+        output += `${cur.val}${cur.next ? ', ' : ''}`
         cur = cur.next
       }
       return output + ']'
