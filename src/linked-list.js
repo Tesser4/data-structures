@@ -71,6 +71,16 @@ const getLinkedList = () => {
       for (let i = 0; i < index; i++) cur = cur.next
       return cur.val
     },
+    indexOf(val) {
+      let index = 0
+      let cur = head
+      while (cur) {
+        if (cur.val === val) return index
+        cur = cur.next
+        index += 1
+      }
+      return -1
+    },
     size() {
       return size
     },
