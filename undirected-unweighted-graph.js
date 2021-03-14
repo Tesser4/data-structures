@@ -97,3 +97,4 @@ const getUndirectedGraph = (adjacencyList = {}) => {
   }
 }
 
+export default getUndirectedGraph
