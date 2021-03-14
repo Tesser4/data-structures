@@ -109,4 +109,5 @@ const getLinkedList = () => {
   }
 }
 
-module.exports = getLinkedList
+export default getLinkedList
+
