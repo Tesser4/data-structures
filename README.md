@@ -1,6 +1,12 @@
-# Data Structures
+# Data Structures and Algorithms
 
-### Me, playing with data structures...
+### Me, playing with...
 
-* Linked List
-* Undirected Unweighted Graph
+## Data Structures
+
+- Linked List
+- Undirected Unweighted Graph
+
+## Algorithms
+
+- Dijkstra's Shortest Path Algorithm

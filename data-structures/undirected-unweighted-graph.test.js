@@ -1,5 +1,5 @@
 
-import { assertEquals } from './deps.js'
+import { assertEquals } from '../deps.js'
 import getUndirectedGraph from './undirected-unweighted-graph.js'
 
 const graph = getUndirectedGraph();

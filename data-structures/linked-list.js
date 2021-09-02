@@ -89,7 +89,7 @@ const getLinkedList = () => {
       size = 0
     },
     toArray() {
-      let array = []
+      const array = []
       let cur = head
       while (cur) {
         array.push(cur.val)
@@ -110,4 +110,3 @@ const getLinkedList = () => {
 }
 
 export default getLinkedList
-

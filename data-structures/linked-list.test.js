@@ -1,4 +1,4 @@
-import { assertEquals } from './deps.js'
+import { assertEquals } from '../deps.js'
 import getLinkedList from './linked-list.js'
 
 const ll = getLinkedList()
